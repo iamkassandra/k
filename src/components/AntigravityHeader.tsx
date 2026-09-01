@@ -69,18 +69,23 @@ export const AntigravityHeader: React.FC<AntigravityHeaderProps> = ({
           <div className="w-3 h-3 rounded-full bg-[#27c93f] border border-[#1aab29]/50 hover:opacity-80 transition cursor-pointer" />
         </div>
 
-        {/* Antigravity Logo & Title */}
+        {/* Kass's Studio Logo & Title */}
         <div className="flex items-center space-x-2">
           <div
-            className="w-6 h-6 rounded flex items-center justify-center font-bold text-black"
-            style={{ backgroundColor: settings.accentColor || '#7BCDFF' }}
+            className="w-6 h-6 rounded-lg flex items-center justify-center font-bold text-black shadow-[0_0_12px_rgba(255,183,239,0.35)] transition-transform duration-300 hover:scale-105"
+            style={{
+              background: `linear-gradient(135deg, ${settings.foregroundColor || '#FFB7EF'}, ${settings.accentColor || '#7BCDFF'})`
+            }}
           >
-            <Zap className="w-3.5 h-3.5 fill-black stroke-black" />
+            <Sparkles className="w-3.5 h-3.5 fill-black stroke-black text-black" />
           </div>
           <span className="font-semibold text-white tracking-tight flex items-center gap-1.5">
-            Antigravity
-            <span className="text-[10px] px-1.5 py-0.2 rounded font-mono font-normal bg-[#222634] text-[#7BCDFF] border border-[#7BCDFF]/30">
-              v2.6 Enterprise
+            <span className="bg-gradient-to-r from-[#FFB7EF] via-[#e879f9] to-[#7BCDFF] bg-clip-text text-transparent font-bold">
+              Kass's Studio
+            </span>
+            <span className="text-[10px] px-1.5 py-0.5 rounded-full font-mono font-medium bg-[#1e1a2f] text-[#7BCDFF] border border-[#7BCDFF]/30 shadow-sm flex items-center gap-1">
+              <Zap className="w-2.5 h-2.5 text-[#FFB7EF]" />
+              <span>Antigravity Engine</span>
             </span>
           </span>
         </div>
