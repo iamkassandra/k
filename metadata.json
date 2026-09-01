@@ -1,6 +1,7 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Antigravity Visual Workflow Builder",
+  "description": "Autonomous enterprise visual workflow builder agent with natural chat graph generation, deep thinking, visual canvas, execution simulator, workflow catalog, memory, and Firebase persistence.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
+
